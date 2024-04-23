@@ -16,8 +16,8 @@ body {
 }
 .main-container {
   display: flex;
-  gap: 30px;
-  width: auto;
+  gap: 25px;
+
   min-height: 201px;
   font-family: "Raleway", sans-serif;
 }
@@ -123,4 +123,30 @@ p {
   justify-content: space-between;
   align-items: center;
   margin-top: -5px;
+}
+@media screen and (max-width: 950px) {
+  .bar-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .bar-box {
+    margin-top: 0;
+    height: 196px;
+    width: 100%;
+  }
+  .speech-box {
+    top: 165px;
+    right: 27%;
+  }
+  .speech-box::after {
+    display: none;
+  }
 }
