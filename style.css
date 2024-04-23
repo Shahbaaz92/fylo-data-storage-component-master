@@ -13,6 +13,10 @@ body {
   align-items: center;
   background-color: #0c122c;
   color: #dbd9ff;
+  background-image: url("./images/bg-desktop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 130%;
 }
 .main-container {
   display: flex;
@@ -21,7 +25,7 @@ body {
   min-height: 201px;
   font-family: "Raleway", sans-serif;
 }
-.logo {
+.logo-box {
   width: 350px;
   background-color: #1e2d69;
   border-radius: 10px;
@@ -124,12 +128,24 @@ p {
   align-items: center;
   margin-top: -5px;
 }
+@media screen and (max-width: 1200px) {
+  body {
+    background-position-y: 100%;
+  }
+}
 @media screen and (max-width: 950px) {
+  body {
+    background-size: 120%;
+  }
   .bar-box {
     width: 100%;
   }
 }
 @media screen and (max-width: 750px) {
+  body {
+    background-image: url(./images/bg-mobile.png);
+    background-size: cover;
+  }
   .main-container {
     flex-direction: column;
     gap: 20px;
