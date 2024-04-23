@@ -16,7 +16,7 @@ body {
   background-image: url("./images/bg-desktop.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: 130%;
+  background-position: bottom;
 }
 .main-container {
   display: flex;
