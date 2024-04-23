@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c122c;
+  color: #dbd9ff;
+}
+.main-container {
+  display: flex;
+  gap: 30px;
+  width: auto;
+  min-height: 201px;
+  font-family: "Raleway", sans-serif;
+}
+.logo {
+  width: 350px;
+  background-color: #1e2d69;
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 30px;
+}
+.link-box {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.link-box img {
+  padding: 12px;
+  background-color: #0c122c;
+  border-radius: 10px;
+}
+.bar-box {
+  position: relative;
+  width: 540px;
+  background-color: #1e2d69;
+  border-radius: 10px;
+  padding: 10px 40px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+p {
+  font-size: 12px;
+}
+.about {
+  font-size: 14px;
+}
+.bold {
+  font-weight: 700;
+}
+.speech-box {
+  position: absolute;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  right: 40px;
+  top: -40px;
+}
+.speech-box::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 0;
+  bottom: -20px;
+}
+.speech-box p {
+  font-weight: 700;
+  color: #979797;
+}
+.speech-box p span {
+  font-size: 40px;
+  color: #0c122c;
+  margin-right: 3px;
+}
+.blue-bar {
+  width: 100%;
+  background-color: #0c122c;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.orange-stretch {
+  border-radius: 10px;
+  width: 81.5%;
+  height: 14px;
+  background: linear-gradient(to right, #ffa197 0%, #ff4a95 100%);
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.white-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+}
